@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Store Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Sadiq Electric Store </h1>
+    </header>
+    <nav>
+        <a href="items.html">Add/Remove Items</a>
+        <a href="sales.html">Sales Reports</a>
+        <a href="customer.html">Customer Credit Info</a>
+        <a href="orders.html">Manage Orders</a>
+        <a href="setting.html">Settings</a>
+    </nav>
+    <main>
+        <h2>Current Inventory</h2>
+        <form action="/search" method="get">
+            <label for="q">Item-id:</label>
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+          
+        <table>
+            <thead>
+                <tr>
+                    <th>Item id</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <td>1</td>
+                <td>Electric board</td>
+                <td> 400</td>
+                <td> 300</td>
+                <tr></tr>
+                <td>2</td>
+                <td> switch</td>
+                <td> 50</td>
+                <td> 200</td>
+                <tr></tr>
+                <td>3</td>
+                <td>Light</td>
+                <td> 7</td>
+                <td> 100</td>
+                <tr></tr>
+                <td>4</td>
+                <td>LED</td>
+                <td> 30</td>
+                <td> 80</td>
+                <tr></tr>
+                <td>5</td>
+                <td>LED</td>
+                <td> 25</td>
+                <td> 500</td>
+                <tr></tr>
+                <td>6</td>
+                <td>collar fan</td>
+                <td> 6</td>
+                <td> 5000</td>
+                <tr></tr>
+                <td>7</td>
+                <td>fans</td>
+                <td> 30</td>
+                <td> 3000</td>
+                <tr></tr>
+                <td>8</td>
+                <td>buttons</td>
+                <td> 80</td>
+                <td> 5550</td>
+            </thead>
+            <tbody id="itemList"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electric Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
